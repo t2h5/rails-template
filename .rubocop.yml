@@ -1,0 +1,16 @@
+inherit_from:
+  - .rubocop-performance.yml
+  - .rubocop-rails.yml
+  - .rubocop-rspec.yml
+  - .rubocop-todo.yml
+
+AllCops:
+  TargetRubyVersion: 2.7
+  NewCops: enable
+  Exclude:
+    - '**/tmp/**/*'
+    - '**/vendor/**/*'
+    - '**/node_modules/**/*'
+
+Style/Documentation:
+  Enabled: false
