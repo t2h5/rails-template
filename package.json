@@ -1,6 +1,11 @@
 {
   "name": "rails_template",
   "private": true,
+  "scripts": {
+    "dev": "npm-run-all -p webpacker rails",
+    "webpacker": "./bin/webpack --watch --colors --progress",
+    "rails": "./bin/rails s -b 0.0.0.0"
+  },
   "dependencies": {
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
@@ -8,8 +13,8 @@
     "@rails/webpacker": "4.3.0",
     "turbolinks": "^5.2.0"
   },
-  "version": "0.1.0",
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "webpack-dev-server": "^3.11.0"
   }
 }
