@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "dev": "npm-run-all -p webpacker rails",
-    "webpacker": "./bin/webpack --watch --colors --progress",
+    "webpacker": "./bin/webpack-dev-server",
     "rails": "./bin/rails s -b 0.0.0.0"
   },
   "dependencies": {
