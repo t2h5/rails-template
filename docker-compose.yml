@@ -14,7 +14,7 @@ services:
       - postgres
     command: |
       bash -c '
-        rm tmp/pids/server.pid &&
+        rm -f tmp/pids/server.pid &&
         yarn install &&
         yarn dev'
   postgres:
