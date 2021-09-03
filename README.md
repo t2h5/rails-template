@@ -4,7 +4,7 @@
 
 - ruby: 2.7.4
 - rails: 6.1.4.1
-- postgres: 11.9
+- postgres: 12.6
 
 ## setup
 

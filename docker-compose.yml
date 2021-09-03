@@ -18,7 +18,7 @@ services:
         yarn install &&
         yarn dev'
   postgres:
-    image: postgres:11.9-alpine
+    image: postgres:12.6-alpine
     volumes:
       - db:/var/lib/postgresql/data
     env_file:
