@@ -2,8 +2,8 @@
 
 ## tech stack
 
-- ruby: 2.7.1
-- rails: 6.0.3
+- ruby: 2.7.4
+- rails: 6.1.4.1
 - postgres: 11.9
 
 ## setup
