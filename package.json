@@ -1,5 +1,13 @@
 {
   "private": true,
+  "scripts": {
+    "lint:eslint": "eslint app/javascript --ext .js,.ts,.tsx",
+    "lint:prettier": "prettier app/javascript/**/*.{js,ts,tsx} --check",
+    "lint": "npm-run-all -s lint:*",
+    "fix:eslint": "eslint app/javascript --ext .js,.ts,.tsx --fix",
+    "fix:prettier": "prettier app/javascript/**/*.{js,ts,tsx} --write",
+    "fix": "npm-run-all -s lint:*"
+  },
   "dependencies": {
     "@babel/preset-react": "^7.14.5",
     "@babel/preset-typescript": "^7.15.0",
@@ -20,6 +28,14 @@
     "webpack-cli": "^3.3.12"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.30.0",
+    "@typescript-eslint/parser": "^4.30.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.25.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.2",
     "webpack-dev-server": "^4.1.0"
   }
 }
