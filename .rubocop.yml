@@ -11,6 +11,7 @@ AllCops:
     - '**/tmp/**/*'
     - '**/vendor/**/*'
     - '**/node_modules/**/*'
+    - 'db/schema.rb'
 
 Style/Documentation:
   Enabled: false
