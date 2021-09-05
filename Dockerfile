@@ -5,5 +5,9 @@ RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
     apt-get update -y && apt-get install -y yarn
 
 WORKDIR /rails-template
+
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
+
+COPY package.json yarn.lock ./
+RUN yarn install && yarn cache clean
